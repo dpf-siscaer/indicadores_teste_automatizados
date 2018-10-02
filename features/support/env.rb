@@ -21,7 +21,7 @@ Capybara.configure do |config|
   config.run_server = false
   config.default_driver = :insecure_selenium
 
-  config.app_host = 'http://10.2.108.12:8081/login?from=%2F'
+  #config.app_host = ''
 end
 
 Capybara.default_max_wait_time = 20
