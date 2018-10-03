@@ -1,12 +1,10 @@
 #language: pt
 
-@logout
-@login_Jekins
 Funcionalidade: Navegar no sistema
 
 
-@funcionalidades_navegar
-Cenario: Navegar no sistema e Verificar os Indicadores
+@funcionalidades_exibir_dados_jekins
+Cenario: Navegar no sistema Jekins e visualizar os Indicadores
 
 Dado que estou logado no Sistema Jekins com 'admin' e 'admin'
 Quando eu pecorro a tabela

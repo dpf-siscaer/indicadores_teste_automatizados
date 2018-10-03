@@ -1,4 +1,4 @@
-Dado("que estou na pagina de login do sistema") do
+Dado("que estou na pagina de login do Jekins") do
     visit 'http://10.2.108.12:8081/login?from=%2F'
     @login = LoginJekins.new
   end

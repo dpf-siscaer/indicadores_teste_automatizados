@@ -20,8 +20,6 @@ Capybara.configure do |config|
 
   config.run_server = false
   config.default_driver = :insecure_selenium
-
-  #config.app_host = ''
 end
 
-Capybara.default_max_wait_time = 20
+Capybara.default_max_wait_time = 5
