@@ -1,6 +1,6 @@
 Dado("que estou na pagina de login do sistema") do
     visit 'http://10.2.108.12:8081/login?from=%2F'
-    @login = Login.new
+    @login = LoginJekins.new
   end
   
   Quando("eu informo um {string} e {string}") do |user_name, passoword|

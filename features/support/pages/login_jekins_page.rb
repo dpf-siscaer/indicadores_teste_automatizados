@@ -1,4 +1,4 @@
-class Login < SitePrism::Page
+class LoginJekins < SitePrism::Page
 
     #Mapeando elementos 
     element :user_name, '#j_username'
