@@ -17,11 +17,11 @@ class FuncionalidadeMantis < SitePrism::Page
    end
 
    def navega_prioridade
-        click_link('Por seriedade')
+        click_link('Por prioridade')
    end
 
    def navega_seriedade
-        click_link('Por prioridade')
+        click_link('Por seriedade') 
    end
 
    def navega_categoria
@@ -54,7 +54,7 @@ class FuncionalidadeMantis < SitePrism::Page
    end
 
    def seriedade_down
-        find('body > div:nth-child(6) > span:nth-child(3) > a:nth-child(1)').send_keys(:down)
+        find('span.bracket-link:nth-child(4) > a:nth-child(1)').send_keys(:down)
    end
 
    def categoria_down
