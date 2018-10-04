@@ -8,5 +8,4 @@ Cenario: Navegar no sistema Jenkins e visualizar os Indicadores
 
 Dado que estou logado no Sistema Jenkins com 'admin' e 'admin'
 Quando eu pecorro a tabela
-#Entao vejo "HABILITAR ATUALIZAÇÃO AUTOMÁTICA"
 
