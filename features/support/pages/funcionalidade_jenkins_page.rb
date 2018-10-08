@@ -3,10 +3,17 @@ class FuncionalidadeJenkins < SitePrism::Page
     #mapeando elementos
     elements :tabela, 'tr > td'
 
-     #Método navegar nos paineis
-    def features
-      find('.pane-header > div:nth-child(2) > a:nth-child(1)').click
-      tabela[2].click
+    #Método navegar nos paineis
+    
+    def operacao_painel
+        find('.pane-header > div:nth-child(2) > a:nth-child(1)').click
+    end
+
+    def escolhe_opcao
+        tabela[2].click
+    end
+    
+     def features
       find('div.task:nth-child(9) > a:nth-child(2)').click
     end 
 
@@ -27,6 +34,9 @@ class FuncionalidadeJenkins < SitePrism::Page
     end
 
     #Método descer a página
+    def operacao_down
+        find('.pane-header > div:nth-child(2) > a:nth-child(1)').send_keys(:down)
+    end
     def features_down
         find('li.active:nth-child(4) > a:nth-child(1)').send_keys(:down)
     end
@@ -44,7 +54,7 @@ class FuncionalidadeJenkins < SitePrism::Page
     end
 
     def failures_down
-        find('.nav > li:nth-child(8) > a:nth-child(1)').send_keys(:page_down)
+        find('.nav > li:nth-child(8) > a:nth-child(1)').send_keys(:down)
     end
 
     def logouf

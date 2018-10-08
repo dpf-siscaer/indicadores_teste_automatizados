@@ -1,0 +1,95 @@
+[
+  {
+    "uri": "features/specs/integracao.feature",
+    "id": "integracao-do-sistema",
+    "keyword": "Funcionalidade",
+    "name": "Integracao do Sistema",
+    "description": "",
+    "line": 4,
+    "elements": [
+      {
+        "id": "integracao-do-sistema;navegar-no-sistema-jenkins-e-no-sistema-mantis-visualizando-os-indicadores",
+        "keyword": "Cenario",
+        "name": "Navegar no sistema Jenkins e no Sistema Mantis visualizando os Indicadores",
+        "description": "",
+        "line": 8,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@integracao_siscaer",
+            "line": 7
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.8.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39344
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.8.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35495
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que gostaria de visualizar os indicadores do sistema Jenkins e Mantis",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/itegracao.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79971
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "eu estou em um loop infinito",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/itegracao.rb:9"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Tried to run command without establishing a connection (Selenium::WebDriver::Error::SessionNotCreatedError)\nstack backtrace:\n   0:           0x47e934 - <no info>\n   1:           0x47f0a3 - <no info>\n   2:           0x442511 - <no info>\n   3:           0x42a686 - <no info>\n   4:           0x406f5e - <no info>\n   5:           0x40cfc9 - <no info>\n   6:           0x6bef19 - <no info>\n   7:           0x420756 - <no info>\n   8:           0x6b96e0 - <no info>\n   9:     0x7ffa946a3034 - BaseThreadInitThunk\n./features/support/pages/funcionalidade_mantis_page.rb:69:in `resumo_avancado_down'\n./features/step_definitions/itegracao.rb:139:in `block (3 levels) in <top (required)>'\n./features/step_definitions/itegracao.rb:138:in `times'\n./features/step_definitions/itegracao.rb:138:in `block (2 levels) in <top (required)>'\n./features/step_definitions/itegracao.rb:11:in `loop'\n./features/step_definitions/itegracao.rb:11:in `\"eu estou em um loop infinito\"'\nfeatures/specs/integracao.feature:11:in `Quando eu estou em um loop infinito'",
+              "duration": 996368200180
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Tried to run command without establishing a connection (Selenium::WebDriver::Error::SessionNotCreatedError)\nstack backtrace:\n   0:           0x47e934 - <no info>\n   1:           0x47f0a3 - <no info>\n   2:           0x442511 - <no info>\n   3:           0x42a686 - <no info>\n   4:           0x406f5e - <no info>\n   5:           0x40cfc9 - <no info>\n   6:           0x6bef19 - <no info>\n   7:           0x420756 - <no info>\n   8:           0x6b96e0 - <no info>\n   9:     0x7ffa946a3034 - BaseThreadInitThunk\n./features/support/hooks.rb:5:in `After'",
+              "duration": 12992155
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.8.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Tried to run command without establishing a connection (Selenium::WebDriver::Error::SessionNotCreatedError)\nstack backtrace:\n   0:           0x47e934 - <no info>\n   1:           0x47f0a3 - <no info>\n   2:           0x442511 - <no info>\n   3:           0x42a686 - <no info>\n   4:           0x406f5e - <no info>\n   5:           0x40cfc9 - <no info>\n   6:           0x6bef19 - <no info>\n   7:           0x420756 - <no info>\n   8:           0x6b96e0 - <no info>\n   9:     0x7ffa946a3034 - BaseThreadInitThunk",
+              "duration": 12251886
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
